@@ -1,17 +1,18 @@
 {
-  "name": "node-hid",
-  "description": "USB HID device access library",
+  "name": "node-hid-ioctl-support",
+  "description": "Fork of node-hid to support ioctl, to enable apps to exclusively grab HID devices",
   "version": "1.2.0",
   "author": "Hans Hübner <hans.huebner@gmail.com> (https://github.com/hanshuebner)",
-  "bugs": "https://github.com/node-hid/node-hid/issues",
-  "homepage": "https://github.com/node-hid/node-hid#readme",
+  "bugs": "https://github.com/cheeselemon/node-hid-ioctl-support/issues",
+  "homepage": "https://github.com/cheeselemon/node-hid-ioctl-support/#readme",
   "contributors": [
+    "Valen Kim (https://github.com/cheeselemon)",
     "Blake Miner <miner.blake@gmail.com>",
     "Tod Kurt <todbotdotcom@gmail.com> (https://github.com/todbot)"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/node-hid/node-hid.git"
+    "url": "git://github.com:cheeselemon/node-hid-ioctl-support.git"
   },
   "scripts": {
     "test": "node src/test-ci.js",
@@ -35,7 +36,7 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "license": "(MIT OR X11)",
+  "license": "MIT",
   "dependencies": {
     "bindings": "^1.5.0",
     "nan": "^2.14.0",
