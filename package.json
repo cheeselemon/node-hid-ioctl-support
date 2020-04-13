@@ -1,7 +1,7 @@
 {
   "name": "node-hid-ioctl-support",
   "description": "Fork of node-hid to support ioctl, to enable apps to exclusively grab HID devices",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "Hans Hübner <hans.huebner@gmail.com> (https://github.com/hanshuebner)",
   "bugs": "https://github.com/cheeselemon/node-hid-ioctl-support/issues",
   "homepage": "https://github.com/cheeselemon/node-hid-ioctl-support/#readme",
