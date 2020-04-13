@@ -1,6 +1,6 @@
 {
     'variables': {
-        'driver%': 'libusb'
+        'driver%': 'hidraw'
     },
     'targets': [
         {
@@ -70,11 +70,11 @@
                 [ 'OS=="linux"', {
                     'conditions': [
                         [ 'driver=="libusb"', {
-                            'sources': [ 'hidapi/libusb/hid.c' ],
+                            'sources': [ 'libusb/hid.c' ],
                             'include_dirs+': ['<!@(pkg-config libusb-1.0 --cflags-only-I | sed s/-I//g)']
                         }],
                         [ 'driver=="hidraw"', {
-                            'sources': [ 'hidapi/linux/hid.c' ]
+                            'sources': [ 'linux/hid.c' ]
                         }]
                     ]
                 }],
