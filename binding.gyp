@@ -70,11 +70,11 @@
                 [ 'OS=="linux"', {
                     'conditions': [
                         [ 'driver=="libusb"', {
-                            'sources': [ 'libusb/hid.c' ],
+                            'sources': [ 'hidapi/libusb/hid.c' ],
                             'include_dirs+': ['<!@(pkg-config libusb-1.0 --cflags-only-I | sed s/-I//g)']
                         }],
                         [ 'driver=="hidraw"', {
-                            'sources': [ 'linux/hid.c' ]
+                            'sources': [ 'hidapi/linux/hid.c' ]
                         }]
                     ]
                 }],
